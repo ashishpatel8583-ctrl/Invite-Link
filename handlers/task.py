@@ -2,8 +2,8 @@ from pyrogram import Client, filters
 from database.mongo import tasks
 import time
 
-GROUP_B_ID = -1001234567890  # Task Group
-GROUP_A_ID = -1009876543210  # Main Group
+GROUP_B_ID = -5032773808  # Task Group
+GROUP_A_ID = -5082882000  # Main Group
 
 @app.on_message(filters.command("task") & filters.private)
 async def task(client, message):
