@@ -30,11 +30,11 @@ async def join_track(client, update: ChatMemberUpdated):
     # Notify progress
     await client.send_message(
         user_id,
-        f"✔ New member joined your link!\nProgress: {count}/10"
+        f"✔ New member joined your link!\nProgress: {count}/2"
     )
 
     # If completed
-    if count == 10:
+    if count == 2:
         main_link = await client.create_chat_invite_link(
             chat_id=GROUP_A_ID,
             member_limit=1
