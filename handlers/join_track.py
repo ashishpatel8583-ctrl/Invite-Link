@@ -2,7 +2,7 @@ from pyrogram import Client
 from pyrogram.types import ChatMemberUpdated
 from database.mongo import tasks
 
-GROUP_A_ID = -1009876543210
+GROUP_A_ID = -5082882000
 
 @app.on_chat_member_updated()
 async def join_track(client, update: ChatMemberUpdated):
