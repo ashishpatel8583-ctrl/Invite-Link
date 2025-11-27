@@ -33,5 +33,4 @@ async def task(client, message):
     )
 
     await message.reply(
-        f"Here is your task link (Add 10 members):\n\n{invite.invite_link}"
-    )
+        f"Here is your task link (Add 2 members):\n\n{invite.invite_link}")
