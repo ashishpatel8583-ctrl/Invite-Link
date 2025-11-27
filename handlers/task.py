@@ -17,7 +17,7 @@ async def task(client, message):
     # Generate 10-member invite
     invite = await client.create_chat_invite_link(
         chat_id=GROUP_B_ID,
-        member_limit=10,
+        member_limit=2,
         name=f"task-{user_id}-{int(time.time())}"
     )
 
