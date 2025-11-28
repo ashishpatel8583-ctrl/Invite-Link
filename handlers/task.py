@@ -1,4 +1,5 @@
-from pyrogram import Client, filters
+from pyrogram import filters
+from main import app    # <-- Yeh line sabse important hai!
 from database.mongo import tasks
 import time
 
@@ -14,7 +15,7 @@ async def task(client, message):
     if data and data.get("completed") == 1:
         return await message.reply("You already completed the task and received main link.")
 
-    # Generate 10-member invite
+    # Generate invite link (2 members)
     invite = await client.create_chat_invite_link(
         chat_id=GROUP_B_ID,
         member_limit=2,
@@ -33,4 +34,5 @@ async def task(client, message):
     )
 
     await message.reply(
-        f"Here is your task link (Add 2 members):\n\n{invite.invite_link}")
+        f"Here is your task link (Add 2 members):\n\n{invite.invite_link}"
+    )
