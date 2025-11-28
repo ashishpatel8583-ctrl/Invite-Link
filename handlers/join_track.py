@@ -1,6 +1,7 @@
 from pyrogram import Client
 from pyrogram.types import ChatMemberUpdated
 from database.mongo import tasks
+from main import app   # <-- MOST IMPORTANT LINE
 
 GROUP_A_ID = -5082882000
 
